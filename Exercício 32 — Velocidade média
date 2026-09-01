@@ -1,0 +1,27 @@
+Algoritmo "Velocidade_Media"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor    : Gizelle Karine Santos Alcantara
+// Descrição    : Calcula a velocidade média a partir da distância percorrida e do tempo gasto na viagem.
+// Autor(a)     : Mauricio Antonio De Souza Barretto Filho
+// Data atual   : 01/09/2026
+
+Var
+  distancia:real
+  tempo1: real
+  velocidadeMedia: real
+  
+Inicio
+   // Entrada de dados
+   Escreval("Digite a distância percorrida: ")
+   Leia(distancia)
+
+   Escreval("Digite o tempo gasto na viagem: ")
+   Leia(tempo1)
+
+   // Processamento
+   velocidadeMedia <- distancia / tempo1
+
+   // Saída de dados
+   Escreval("Velocidade média: ", velocidadeMedia:8:2, " km/h")
+
+Fimalgoritmo
