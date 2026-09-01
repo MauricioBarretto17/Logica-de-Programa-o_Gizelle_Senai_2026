@@ -1,0 +1,33 @@
+Algoritmo "Custo_de_Uma_Viagem"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor    : Gizelle Karine Santos Alcantara
+// Descrição    : Solicita distância, consumo médio e preço do combustível para calcular a quantidade de litros necessária e o custo total da viagem.
+// Autor(a)     : Mauricio Antonio De Souza Barretto Filho
+// Data atual   : 01/09/2026
+
+Var
+   distancia, consumo, preco_litro: real
+   litros, custo_total: real
+
+Inicio
+   // Entrada de dados
+   Escreval("Digite a distância total da viagem (km): ")
+   Leia(distancia)
+
+   Escreval("Digite o consumo médio do veículo (km/L): ")
+   Leia(consumo)
+
+   Escreval("Digite o preço do litro do combustível (R$): ")
+   Leia(preco_litro)
+
+   // Processamento
+   litros <- distancia / consumo
+   custo_total <- litros * preco_litro
+
+   // Saída de dados
+   Escreval("")
+   Escreval("--- Resumo da Viagem ---")
+   Escreval("Litros necessários: ", litros:8:2, " L")
+   Escreval("Custo total estimado: R$ ", custo_total:8:2)
+
+Fimalgoritmo
