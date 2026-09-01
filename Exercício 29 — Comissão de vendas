@@ -1,0 +1,37 @@
+Algoritmo "Comissão_de_Vendas"
+// Disciplina   :[Linguagem e Lógica de Programação]
+// Professor   :Gizelle Karine Santos Alcantara
+// Descrição   :Calcula a comissão sobre as vendas e exibe o salário total do vendedor.
+// Autor(a)    :Mauricio Antonio De Souza Barretto Filho
+// Data atual  :01/09/2026
+Var
+nome: caracter
+   salario_fixo, total_vendido, percentual_comissao: real
+   valor_comissao, salario_total: real
+
+Inicio
+// Entrada de dados
+   Escreval("Digite o nome do vendedor: ")
+   Leia(nome)
+   
+   Escreval("Digite o salário fixo: ")
+   Leia(salario_fixo)
+
+  Escreval("Digite o total vendido: ")
+   Leia(total_vendido)
+
+   Escreval("Digite o percentual de comissão (ex: 10 para 10%): ")
+   Leia(percentual_comissao)
+
+    // Processamento
+   valor_comissao <- total_vendido * (percentual_comissao / 100)
+   salario_total <- salario_fixo + valor_comissao
+
+    // Saída de dados
+   Escreval("--- RESUMO DE PAGAMENTO ---")
+   Escreval("Nome do vendedor: ", nome)
+   Escreval("Valor da comissão: R$ ", valor_comissao:8:2)
+   Escreval("Salário total: R$ ", salario_total:8:2)
+
+
+Fimalgoritmo
