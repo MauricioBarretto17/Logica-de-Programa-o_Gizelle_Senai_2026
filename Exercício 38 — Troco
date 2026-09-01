@@ -1,0 +1,27 @@
+Algoritmo "Calculo_do_Troco"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor    : Gizelle Karine Santos Alcantara
+// Descrição    : Solicita o valor da compra e o valor entregue pelo cliente. Valida se o pagamento é suficiente, calcula e exibe o troco ou exibe mensagem de erro.
+// Autor(a)     : Mauricio Antonio De Souza Barretto Filho
+// Data atual   : 01/09/2026
+
+Var
+   valor_compra, valor_pago, troco: real
+
+Inicio
+   // Entrada de dados
+   Escreval("Digite o valor total da compra (R$): ")
+   Leia(valor_compra)
+
+   Escreval("Digite o valor entregue pelo cliente (R$): ")
+   Leia(valor_pago)
+
+   // Processamento e Saída de dados
+   se (valor_pago < valor_compra) entao
+      Escreval("O VALOR ESTA ERRADO!!!")
+   senao
+      troco <- valor_pago - valor_compra
+      Escreval("Valor do troco: R$ ", troco:8:2)
+   fimse
+
+Fimalgoritmo
