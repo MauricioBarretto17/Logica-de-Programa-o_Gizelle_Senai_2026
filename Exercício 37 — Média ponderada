@@ -1,0 +1,28 @@
+Algoritmo "Media_Ponderada"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor    : Gizelle Karine Santos Alcantara
+// Descrição    : Solicita três notas de um estudante, calcula a média ponderada (pesos 2, 3 e 5) e exibe o resultado formatado.
+// Autor(a)     : Mauricio Antonio De Souza Barretto Filho
+// Data atual   : 01/09/2026
+
+Var
+   nota1, nota2, nota3, media: real
+
+Inicio
+   // Entrada de dados
+   Escreval("Digite a primeira nota (peso 2): ")
+   Leia(nota1)
+
+   Escreval("Digite a segunda nota (peso 3): ")
+   Leia(nota2)
+
+   Escreval("Digite a terceira nota (peso 5): ")
+   Leia(nota3)
+
+   // Processamento
+   media <- ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10
+
+   // Saída de dados
+   Escreval("Média Ponderada: ", media:8:2)
+
+Fimalgoritmo
