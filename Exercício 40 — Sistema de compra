@@ -1,0 +1,46 @@
+Algoritmo "Sistema_de_Compra"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor    : Gizelle Karine Santos Alcantara
+// Descrição    : Registra uma compra, calcula subtotal, desconto e valor final, apresentando o resumo completo da transação.
+// Autor(a)     : Mauricio Antonio De Souza Barretto Filho
+// Data atual   : 01/09/2026
+
+Var
+   nome_cliente, nome_produto: caractere
+   preco_unitario, percentual_desconto: real
+   subtotal, valor_desconto, valor_final: real
+   quantidade: inteiro
+
+Inicio
+   // Entrada de dados
+   Escreval("Digite o nome do cliente: ")
+   Leia(nome_cliente)
+
+   Escreval("Digite o nome do produto: ")
+   Leia(nome_produto)
+
+   Escreval("Digite o preço unitário (R$): ")
+   Leia(preco_unitario)
+
+   Escreval("Digite a quantidade comprada: ")
+   Leia(quantidade)
+
+   Escreval("Digite o percentual de desconto (%): ")
+   Leia(percentual_desconto)
+
+   // Processamento
+   subtotal <- preco_unitario * quantidade
+   valor_desconto <- subtotal * percentual_desconto / 100
+   valor_final <- subtotal - valor_desconto
+
+   // Saída de dados (Resumo da Compra)
+   Escreval("")
+   Escreval("=== RESUMO DA COMPRA ===")
+   Escreval("Cliente: ", nome_cliente)
+   Escreval("Produto: ", nome_produto)
+   Escreval("Quantidade: ", quantidade)
+   Escreval("Subtotal: R$ ", subtotal:8:2)
+   Escreval("Desconto: R$ ", valor_desconto:8:2)
+   Escreval("Valor final: R$ ", valor_final:8:2)
+
+Fimalgoritmo
