@@ -1,0 +1,30 @@
+Algoritmo "Calculo_do_IMC"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor    : Gizelle Karine Santos Alcantara
+// Descrição    : Solicita nome, peso e altura de uma pessoa, calcula o IMC e exibe o resultado formatado.
+// Autor(a)     : Mauricio Antonio De Souza Barretto Filho
+// Data atual   : 01/09/2026
+
+Var
+   nome: caractere
+   peso, altura, imc: real
+
+Inicio
+   // Entrada de dados
+   Escreval("Digite o nome da pessoa: ")
+   Leia(nome)
+
+   Escreval("Digite o peso (em kg): ")
+   Leia(peso)
+
+   Escreval("Digite a altura (em metros): ")
+   Leia(altura)
+
+   // Processamento
+   imc <- peso / (altura * altura)
+
+   // Saída de dados
+   Escreval("Nome: ", nome)
+   Escreval("IMC: ", imc:8:2)
+
+Fimalgoritmo
