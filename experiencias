@@ -1,0 +1,52 @@
+algoritmo "experiencias"
+// Disciplina   : [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+
+var
+   n, i, qtd: inteiro
+
+   totalRatos, totalSapos, totalCoelhos, totalGeral: inteiro
+   percRatos, percSapos, percCoelhos: real
+
+inicio
+
+   totalRatos <- 0
+   totalSapos <- 0
+   totalCoelhos <- 0
+
+   leia(n)
+
+   para i de 1 ate n faca
+
+      leia(qtd)
+
+
+      se  = "R" entao
+         totalRatos <- totalRatos + qtd
+      fimse
+
+      se  = "S" entao
+         totalSapos <- totalSapos + qtd
+      fimse
+
+      se  = "C" entao
+         totalCoelhos <- totalCoelhos + qtd
+      fimse
+
+   fimpara
+
+   totalGeral <- totalRatos + totalSapos + totalCoelhos
+
+   percRatos <- (totalRatos * 100) / totalGeral
+   percSapos <- (totalSapos * 100) / totalGeral
+   percCoelhos <- (totalCoelhos * 100) / totalGeral
+
+   escreval("Total: ", totalGeral)
+   escreval("Total de coelhos: ", totalCoelhos)
+   escreval("Total de ratos: ", totalRatos)
+   escreval("Total de sapos: ", totalSapos)
+   escreval("Percentual de coelhos: ", percCoelhos:0:2, "%")
+   escreval("Percentual de ratos: ", percRatos:0:2, "%")
+   escreval("Percentual de sapos: ", percSapos:0:2, "%")
+
+fimalgoritmo
