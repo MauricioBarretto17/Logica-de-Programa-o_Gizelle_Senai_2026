@@ -1,0 +1,45 @@
+algoritmo "combustivel"
+
+var
+   codigo: inteiro
+   qtdAlcool, qtdGasolina, qtdDiesel: inteiro
+
+inicio
+   qtdAlcool <- 0
+   qtdGasolina <- 0
+   qtdDiesel <- 0
+
+   codigo <- 0
+
+   enquanto (codigo <> 4) faca
+      escreval("================================")
+      escreval("Digite o codigo do combustivel : ")
+      escreval("================================")
+      escreval("1-Alcool")
+      escreval("2-Gasolina")
+      escreval("3-Diesel")
+      escreval("4-Fim")
+      escreval("================================")
+      leia(codigo)
+
+      escolha codigo
+         caso 1
+            qtdAlcool <- qtdAlcool + 1
+         caso 2
+            qtdGasolina <- qtdGasolina + 1
+         caso 3
+            qtdDiesel <- qtdDiesel + 1
+         caso 4
+            // Opcao de encerramento (nao faz nada no contador)
+         outrocaso
+            escreval("Codigo invalido! Digite novamente.")
+      fimescolha
+   fimenquanto
+   escreval("================================")
+   escreval("MUITO OBRIGADO!!!")
+   escreval("================================")
+   escreval("Alcool: ", qtdAlcool)
+   escreval("Gasolina: ", qtdGasolina)
+   escreval("Diesel: ", qtdDiesel)
+
+fimalgoritmo
